@@ -1,0 +1,17 @@
+
+//styling header
+
+.header{
+	padding-top:10rem;
+	padding-bottom: calc(10rem - #{$navbar-height});
+	background: url('../img/bg-masthead.jpg');
+	background:{
+	position: center;
+  	repeat: no-repeat;
+  	attachment: scroll;
+  	size: cover;
+  	}
+  	h1{
+      font-size: 2.25rem;
+  	}
+}

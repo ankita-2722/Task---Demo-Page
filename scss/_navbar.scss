@@ -1,0 +1,55 @@
+//Base styling for the NAVBAR
+
+#mainNav{
+	box-shadow:$box-shadow;
+	background-color:$white;
+	transition: background-color 0.2s ease;
+	.navbar-brand{
+	font-family: $font-family-sans-serif;
+	font-weight: $font-weight-bold;
+	color: gray;
+	}
+    
+    .navbar-nav{
+      .navbar-item{
+        .navbar-link{
+           color:gray;
+           font:{
+              family: $font-family-sans-serif;
+	          weight: $font-weight-bold;
+	          size:0.9rem;
+           }   
+           padding:0.75rem 0;
+           &:hover,&:active {
+              color:$primary;
+           }    
+           &:active{
+              color:$primary;
+           }
+        }
+      }
+    }
+    // navbar styling applied when page is scrolled
+
+    &.navbar-light{
+      	box-shadow:$box-shadow;
+		background-color:$white;
+	.navbar-brand{
+		color: gray;
+		&:hover {
+          color: $primary;
+        }
+    }
+    .navbar-nav{
+      .navbar-item{
+        .navbar-link{
+           color:gray;  
+           &:hover{
+              color:$primary;
+            }
+         }
+       }
+     }
+   }
+ }
+
